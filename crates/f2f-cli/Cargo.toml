@@ -1,0 +1,21 @@
+[package]
+name = "f2f-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+authors.workspace = true
+repository.workspace = true
+publish.workspace = true
+description = "Capture failed commands and replay them later"
+
+[[bin]]
+name = "f2f"
+path = "src/main.rs"
+
+[dependencies]
+f2f-core.workspace = true
+f2f-capture.workspace = true
+f2f-store.workspace = true
+clap.workspace = true
+serde_json.workspace = true
